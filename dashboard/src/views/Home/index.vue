@@ -9,8 +9,8 @@
 <script>
 import { onMounted } from 'vue'
 import { useRouter } from 'vue-router'
-import CustomHeader from "./CustomHeader";
-import Contact from "./Contact";
+import CustomHeader from './CustomHeader'
+import Contact from './Contact'
 
 export default {
   components: {
@@ -23,17 +23,17 @@ export default {
     onMounted(() => {
       const token = window.localStorage.getItem('token')
       if (token) {
-        router.push({ name: 'Feedbacks'})
+        router.push({ name: 'Feedbacks' })
       }
-    });
-    function handleLogin() {}
-    function handleAccountCreate() {}
+    })
+    function handleLogin () {}
+    function handleAccountCreate () {}
     return {
       handleLogin,
       handleAccountCreate
-    };
+    }
   }
-};
+}
 </script>
 
 <style></style>
